@@ -9,9 +9,7 @@
 title: POC da Intranet
 email: nicolas.ibanheiz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Projeto utilizado como prova de conceito para o modelo da nova Intranet da DP6.
 twitter_username: jekyllrb
 github_username:  Ibanheiz
 

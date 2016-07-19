@@ -42,6 +42,12 @@
         }
     }
 
+    .menu {
+        color: #F00;
+        display: flex;
+        justify-content: space-between;
+    }
+
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
