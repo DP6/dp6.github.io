@@ -43,10 +43,58 @@
     }
 
     .menu {
-        color: #F00;
+        color: #2a7ae2;
         display: flex;
         justify-content: space-between;
+        list-style: none;
     }
+
+    .submenu {
+        margin: 0;
+        padding: 0;
+        display: none;
+        width: 220px;
+        background: #999;
+        list-style: none;
+    }
+    .menu-item a {
+        display: block;
+        width: 100px;
+        cursor: pointer;
+    }
+    .menu-item {
+        width: 220px;
+        height: 30px;
+    }
+    .menu .menu-item:hover > .submenu {
+        display: block;
+    }
+
+    .submenu-item {
+        width: 220px;
+        font-size: 16px;
+        height: 50px;
+        line-height: 30px;
+        border-bottom: 2px solid #FFF;
+    }
+    .submenu-item a {
+        display: block;
+        width: 220px;
+        height: 50px;
+        padding-top: 8px;
+        color: #FFF !important;
+        text-align: center;
+        background: #666;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all 0.2 linear;
+    }
+    .submenu-item a:hover{
+        background: #333;
+        color: #999;
+        transition: all 0.2 linear;
+    }
+    
 
     @include media-query($on-palm) {
         position: absolute;
