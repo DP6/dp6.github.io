@@ -60,7 +60,7 @@
   max-height: 0px!important;
 }
 
-.visao_geral .menu-lista-visao_geral + ul,
+.index .menu-lista-index + ul,
 .analise .menu-lista-analise + ul,
 .referencias .menu-lista-referencias + ul,
 .dp6 .menu-lista-dp6 + ul {
@@ -105,7 +105,7 @@
   color: #0E8BB7!important;
 }
 
-.visao_geral .menu-lista-visao_geral,
+.index .menu-lista-index,
 .analise .menu-lista-analise,
 .referencias .menu-lista-referencias,
 .sobre .menu-lista-sobre,
@@ -132,16 +132,16 @@
   background-image: url('../img/icon/download_azul.png');
 }
 
-.menu-lista-visao_geral {
-  background-image: url('../img/icon/visao_geral_cinza.png');
+.menu-lista-index {
+  background-image: url('../img/icon/index_cinza.png');
 }
 
-.visao_geral .menu-lista-visao_geral {
-  background-image: url('../img/icon/visao_geral_laranja.png');
+.index .menu-lista-index {
+  background-image: url('../img/icon/index_laranja.png');
 }
 
-.menu-lista-visao_geral::before {
-  background-image: url('../img/icon/visao_geral_azul.png');
+.menu-lista-index::before {
+  background-image: url('../img/icon/index_azul.png');
 }
 
 .menu-lista-analise {

@@ -513,3 +513,11 @@ img.secao-imagem,
   letter-spacing: .09em;
   border-radius: 2px;
 }
+
+.docs {
+  text-decoration: underline;
+}
+
+.docs:hover {
+  text-decoration: underline overline;
+}

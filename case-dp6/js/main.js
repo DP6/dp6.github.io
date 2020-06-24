@@ -7,13 +7,11 @@
     lb.toggleClass('scrolled', lbContent.scrollTop() > 10);
   });
 
-  setTimeout(function () {
+  jQuery(document).ready(function () {
     body.addClass('domready');
-  }, 500);
+  });
 
-  jQuery('.cards-montadoras').on('click tap', '.card-montadoras', function (
-    ev
-  ) {
+  jQuery('.cards-montadoras').on('click tap', '.card-montadoras', function () {
     var data = jQuery(this).data();
     var content = jQuery('.info-montadora[data-id="' + data.id + '"]').html();
     lb.find('.lightbox-icon')
