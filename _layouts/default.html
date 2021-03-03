@@ -5,11 +5,13 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400&lang=pt-br">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
-      <a href="/">
-        <img src="https://www.dp6.com.br/wp-content/uploads/2017/12/logo-cor.png">
+      <a href="https://dp6.com.br/">
+        <img src="/assets/img/logo-cor.png">
       </a>
       <nav>
         <a href="/about">About</a>
@@ -19,34 +21,36 @@
         <a href="https://blog.dp6.com.br/">Blog</a>
       </nav>
     </header>
-    <h1>{{ page.title }}</h1>
     <section>
       {{ content }}
     </section>
     <footer>
-      <div class='row'>
-        <div class='column'>
-          <a><img></a>
+      <div class="row">
+        <div class="logo">
+          <a href="https://dp6.com.br/">
+            <img src="/assets/img/logo-cor.png">
+          </a>
         </div>
-        <div class='column'>
-          <img>
+        <div class="centro-inovacao">
+          {/;centro_de_inovação/}
         </div>
-        <div class='column'>
-          <a href="https://www.facebook.com/dp6.com.br"><img></a>
-          <a href="https://www.linkedin.com/company/dp6/"><img></a>
-          <a href="https://www.instagram.com/insta_dp6/"><img></a>
-          <a href="https://www.twitter.com/_dp6"><img></a>
-          <a href="https://www.github.com"><img></a>
+        <div class="social">
+          <a href="https://www.facebook.com/dp6.com.br"><i class="icon fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/dp6/"><i class="icon fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/insta_dp6/"><i class="icon fa fa-instagram"></i></a>
+          <a href="https://www.twitter.com/_dp6"><i class="icon fa fa-twitter"></i></a>
+          <a href="https://www.github.com/DP6"><i class="icon fa fa-github"></i></a>
         </div>
       </div>
-      <div class='row'>
-        <div class='column'>
+      <hr>
+      <div class="row">
+        <div class="copyright">
           &copy;dp6 2020
         </div>
-        <div class='column'>
-          <a></a>
+        <div class="politica">
+          <a href="https://dp6.com.br/politica-de-privacidade/">Política de Privacidade</a>
         </div>
-        <div class='column'></div>
+        <div class="column">a</div>
       </div>
     </footer>
   </body>

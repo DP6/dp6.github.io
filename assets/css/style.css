@@ -21,15 +21,26 @@ a {
 body {
   background-color: #fafafa;
   line-height: 1.5em;
+  display: flex;
+  flex-flow: column;
+  
 }
 
-header {
-  height: 5em;
+header, footer .row {
+  min-height: 5em;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2em;
+}
+
+header {
+  flex: 0 5em;
+  padding: 0 5em;
+}
+
+section {
+  flex: 1;
 }
 
 nav a {
@@ -37,5 +48,44 @@ nav a {
 }
 
 footer {
-  
+  font-weight: 100;
+  flex: 0 2em;
+  background-color: #231F20;
+  padding: 10em 5em 1em;
+}
+
+footer .row > :first-child,
+footer .row > :last-child{
+  min-width: 160px;
+}
+
+.centro-inovacao a {
+  font-size: 3em;
+}
+
+.copyright, .centro-inovacao, .politica a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5em;
+}
+
+.centro-inovacao {
+  font-size: 3em;
+}
+
+.social {
+  text-align: right;
+}
+
+.icon {
+  font-size: 1em!important;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 1.5em;
+  padding-top: 0.25em;
+  height: 1.25em;
+  border-radius: 50%;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.75);
 }
