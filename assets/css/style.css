@@ -1,7 +1,9 @@
-html, body { 
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+html,
+body {
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial',
+    sans-serif;
   width: 100%;
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, 0.54);
   min-width: 320px;
   max-height: 100%;
   height: 100%;
@@ -15,7 +17,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, 0.54);
 }
 
 body {
@@ -23,10 +25,10 @@ body {
   line-height: 1.5em;
   display: flex;
   flex-flow: column;
-  
 }
 
-header, footer .row {
+header,
+footer .row {
   min-height: 5em;
   display: flex;
   flex-flow: row;
@@ -41,6 +43,7 @@ header {
 
 section {
   flex: 1;
+  margin-top: 3em;
 }
 
 nav a {
@@ -54,12 +57,12 @@ nav a:hover {
 footer {
   font-weight: 100;
   flex: 0 2em;
-  background-color: #231F20;
+  background-color: #231f20;
   padding: 10em 5em 1em;
 }
 
 footer .row > :first-child,
-footer .row > :last-child{
+footer .row > :last-child {
   min-width: 160px;
 }
 
@@ -67,7 +70,9 @@ footer .row > :last-child{
   font-size: 3em;
 }
 
-.copyright, .centro-inovacao, .politica a {
+.copyright,
+.centro-inovacao,
+.politica a {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5em;
 }
@@ -81,7 +86,7 @@ footer .row > :last-child{
 }
 
 .icon {
-  font-size: 1em!important;
+  font-size: 1em !important;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
   width: 1.5em;
@@ -99,7 +104,9 @@ hr {
   border-color: rgba(255, 255, 255, 0.75);
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -114,7 +121,8 @@ hr {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -136,8 +144,9 @@ hr {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -149,7 +158,7 @@ hr {
   bottom: 8px;
   width: 100%;
   text-align: center;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Number text (1/3 etc) */
@@ -173,7 +182,8 @@ hr {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -186,11 +196,19 @@ hr {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

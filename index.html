@@ -5,31 +5,32 @@
 layout: home
 ---
 
-<section>
-
-
-    {% for repository in site.github.public_repositories %}
-
+<div class="cards-container">
+  {% for repository in site.github.public_repositories %}
+  {% if repository.name == "penguin-datalayer-collect"
+     or repository.name == "analytics-helper"
+     or repository.name == "penguin-datalayer-core"
+     or repository.name == "Doc-Formatter-Penguin"
+     or repository.name == "DataLayer_Penguin" %}
+  <a href="{{repository.html_url}}"
+    ><!-- {{site.url}}/{{repository.name}} -->
     <div class="card container">
+      <figure>
+        <img src="/assets/img/logo-cor.png" alt="logo" class="logo" />
+      </figure>
+      <h3 class="card-title">{{repository.name}}</h3>
+      <div>
+        {{repository.stargazers_count}} <i class="fa fa-star"></i>&nbsp;&nbsp;
+        {{repository.watchers_count}} <i class="fa fa-eye"></i>
+      </div>
+      <p class="card-subtitle">{{repository.description}}</p>
 
-        <figure>
-            <img src="https://www.dp6.com.br/wp-content/uploads/2017/12/logo-cor.png" alt="logo">
-        </figure>
-        <h3 class="card-title"> <a href="{{repository.html_url}}">{{repository.name}}</a></h3>
-        <div>
-            {{repository.stargazers_count}} <i class="fa fa-star"></i>
-            {{repository.watchers_count}} <i class="fa fa-eye"></i>
-            {{repository.has_pages}}
+      <div class="actions">
+        <div class="action-buttons">
+          <i class="fa fa-arrow-right"></i>
         </div>
-        <p class="card-subtitle"> {{repository.description}} </p>
-
-        <div class="actions">
-            <div class="action-buttons">
-                <a href="{{site.url}}/{{repository.name}}" class="button">
-                    <i class="fa fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
-    {% endfor %}
-</section>
+  </a>
+  {% endif %} {% endfor %}
+</div>
