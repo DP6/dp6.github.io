@@ -47,6 +47,10 @@ nav a {
   padding: 0.5em 1em;
 }
 
+nav a:hover {
+  font-weight: bold;
+}
+
 footer {
   font-weight: 100;
   flex: 0 2em;
