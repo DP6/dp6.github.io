@@ -15,7 +15,7 @@ plugins:
 
 # Build settings
 markdown: kramdown
-  syntax_highlighter: rouge
+highlighter: rouge
 
 defaults:
   -
