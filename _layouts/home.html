@@ -1,22 +1,22 @@
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400&lang=pt-br">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="/assets/css/card_style.css">
-</head>
-
+  {% include head.html %}
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCL3F3Z"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {% include header.html %}
-  {% include carousel.html %}
-  <section>
-    {{ content }}
-  </section>
-  {% include footer.html %}  
+  <div class="container-geral">
+    {% if page.path.size == 0 %}
+      {% include carousel.html %}
+    {% else %}
+    {% include initiative-top.html %}
+    {% endif %}
+    <section>
+      {{ content }}
+    </section>
+    {% include footer.html %}  
+  </div>
+  {% include scripts.html %}
 </body>
 </html>
