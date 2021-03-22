@@ -7,7 +7,7 @@
   <!-- End Google Tag Manager (noscript) -->
   {% include header.html %}
   <div class="container-geral">
-    {% if page.path.size != 0 %}
+    {% if page.path.size > 1 %}
       {% include initiative-top.html %}
     {% else %}
       {% include carousel.html %}
