@@ -7,10 +7,10 @@
   <!-- End Google Tag Manager (noscript) -->
   {% include header.html %}
   <div class="container-geral">
-    {% if page.path.size == 0 %}
-      {% include carousel.html %}
+    {% if page.path.size != 0 %}
+      {% include initiative-top.html %}
     {% else %}
-    {% include initiative-top.html %}
+      {% include carousel.html %}
     {% endif %}
     <section>
       {{ content }}
