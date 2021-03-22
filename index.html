@@ -1,22 +1,15 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
----
-
 <div class="cards-container">
   {% for repository in site.github.public_repositories %}
   {% if repository.name == "penguin-datalayer-collect"
-     or repository.name == "analytics-helper"
+     or repository.name == "easy-collect"
      or repository.name == "penguin-datalayer-core"
      or repository.name == "Doc-Formatter-Penguin"
-     or repository.name == "DataLayer_Penguin" %}
+     or repository.name == "Marketing-Attribution-Models" %}
   <a href="https://dp6.github.io/{{repository.name}}"
     ><!-- {{site.url}}/{{repository.name}} -->
     <div class="card container">
       <figure>
-        <img src="/assets/img/logo-cor.png" alt="logo" class="logo" />
+        <img src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png" alt="logo" class="logo" />
       </figure>
       <h3 class="card-title">{{repository.name}}</h3>
       <div>
