@@ -30,7 +30,7 @@
 }
 
 .card-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 2em;
   font-weight: 500;
   margin: 0;
@@ -40,6 +40,10 @@
   color: grey;
   font-size: 1em;
   font-weight: 300;
+  max-width: 150ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .icon {

@@ -7,23 +7,19 @@ layout: home
 
 <div class="cards-container">
   {% for repository in site.github.public_repositories %}
-  {% if repository.name == "penguin-datalayer-collect"
-     or repository.name == "easy-collect"
-     or repository.name == "penguin-datalayer-core"
-     or repository.name == "Doc-Formatter-Penguin"
-     or repository.name == "Marketing-Attribution-Models" %}
+  {% if repository.homepage contains "dp6.github.io/"%}
   <a href="https://dp6.github.io/{{repository.name}}"
     ><!-- {{site.url}}/{{repository.name}} -->
     <div class="card container">
       <figure>
-        <img src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png" alt="logo" class="logo" style="max-width: 140px;" />
+        <img src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png" alt="logo" class="logo" style="max-width: 130px;" />
       </figure>
       <h3 class="card-title">{{repository.name}}</h3>
       <div>
         {{repository.stargazers_count}} <i class="fa fa-star"></i>&nbsp;&nbsp;
         {{repository.watchers_count}} <i class="fa fa-eye"></i>
       </div>
-      <p class="card-subtitle">{{repository.description}}</p>
+      <p class="card-subtitle">{{repository.description }}</p>
 
       <div class="actions">
         <div class="action-buttons">

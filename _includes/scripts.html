@@ -1,6 +1,10 @@
 <script>
   var slideIndex = 1;
-  showSlides(slideIndex);
+  try {
+    showSlides(slideIndex);
+  } catch (e) {
+    console.error(e);
+  }
 
   // Next/previous controls
   function plusSlides(n) {

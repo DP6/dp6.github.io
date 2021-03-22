@@ -14,12 +14,6 @@ plugins:
     jekyll-github-metadata
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
+markdown: kramdown-parser-gfm
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+
