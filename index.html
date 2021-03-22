@@ -8,25 +8,29 @@ layout: home
 <div class="cards-container">
   {% for repository in site.github.public_repositories %}
   {% if repository.homepage contains "dp6.github.io/"%}
-  <a href="https://dp6.github.io/{{repository.name}}"
-    ><!-- {{site.url}}/{{repository.name}} -->
-    <div class="card container">
-      <figure>
-        <img src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png" alt="logo" class="logo" style="max-width: 130px;" />
-      </figure>
-      <h3 class="card-title">{{repository.name}}</h3>
-      <div>
-        {{repository.stargazers_count}} <i class="fa fa-star"></i>&nbsp;&nbsp;
-        {{repository.watchers_count}} <i class="fa fa-eye"></i>
-      </div>
-      <p class="card-subtitle">{{repository.description }}</p>
+  <a href="https://dp6.github.io/{{repository.name}}"></a>
+  <!-- {{site.url}}/{{repository.name}} -->
+  <div class="card container">
+    <figure>
+      <img
+        src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png"
+        alt="logo" class="logo" style="max-width: 130px;" />
+    </figure>
+    <h3 class="card-title">{{repository.name}}</h3>
+    <div>
+      <a href="https://github.com/DP6/{{repository.name}}/stargazers"><img alt="GitHub stars"
+          src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social"></a>
+      <a href="https://github.com/DP6/{{repository.name}}/network"><img alt="GitHub forks"
+          src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social"></a>
+    </div>
+    <p class="card-subtitle">{{repository.description }}</p>
 
-      <div class="actions">
-        <div class="action-buttons">
-          <i class="fa fa-arrow-right"></i>
-        </div>
+    <div class="actions">
+      <div class="action-buttons">
+        <em class="fa fa-arrow-right"></em>
       </div>
     </div>
+  </div>
   </a>
   {% endif %} {% endfor %}
 </div>
