@@ -1,19 +1,16 @@
 title: DP6 - Centro de inovações
-email: contato@dp6.com.br
+initiative: ""
 description: >- # this means to ignore newlines until "baseurl:"
   DP6 - Bringing Science to Digital Marketing DP6
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dp6.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dp6
-github_username:  dp6
 
-# Build settings
-#theme: minima
+url: "https://dp6.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 plugins:
   - jekyll-feed
     jekyll-github-metadata
 
 # Build settings
-markdown: kramdown-parser-gfm
-
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
 
