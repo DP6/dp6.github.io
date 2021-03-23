@@ -78,8 +78,9 @@
 }
 
 @media screen and (max-width: 752px) {
-    .card {
-        max-width: 60%;
+    .card,
+    .cards-container a {
+        max-width: 90%;
     }
     .cards-container {
         justify-content: center;

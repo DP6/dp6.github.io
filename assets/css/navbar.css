@@ -112,6 +112,12 @@ nav span {
     nav .container.row {
         justify-content: space-between;
     }
+    nav {
+        width: 90%;
+    }
+    .crop img {
+        margin-top: 50px !important;
+    }
 }
 
 .active {

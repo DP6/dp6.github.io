@@ -16,6 +16,7 @@ body {
     background-color: var(--body-bg);
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .row {
