@@ -8,7 +8,7 @@ layout: home
   <span>“{/;INICIATIVAS/ }”</span>
 </div>
 <div class="cards-container">
-  {% for repository in site.github.public_repositories limit:6 %} {% if
+  {% for repository in site.github.public_repositories%} {% if
   repository.homepage contains "dp6.github.io/"%}
   <!-- {{site.url}}/{{repository.name}} -->
 
