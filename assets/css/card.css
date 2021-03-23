@@ -1,0 +1,87 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    border-radius: 5px;
+    min-height: 350px;
+    width: 350px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    margin: 0 1em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card);
+    z-index: 2;
+    padding: 10px 50px !important;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    line-height: 2em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-subtitle {
+    color: var(--text-on-body);
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 150ch;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--text-on-body);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    line-height: 36px;
+}
+
+.actions {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+@media screen and (max-width: 752px) {
+    .card {
+        max-width: 60%;
+    }
+    .cards-container {
+        justify-content: center;
+    }
+}

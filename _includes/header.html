@@ -1,10 +1,36 @@
 <header class="dp6-header">
-  <a href="https://dp6.com.br/">
-    <img src="/assets/img/logo-cor.png" height=50 width=160>
-  </a>
-  <nav>
-    <a href="https://dp6.com.br/">Site</a>
-    <a href="https://github.com/DP6">Github</a>
-    <a href="https://blog.dp6.com.br/">Blog</a>
+  <nav class="navbar primary-color shadow fixed row text-bg">
+    <div class="container row justify-around">
+      <span class="icon" onclick="responsive()">
+        <em class="fa fa-bars"></em>
+      </span>
+      <a href="https://dp6.com.br/">
+        <img src="/assets/img/logo-cor.png" height=50 width=160 alt="DP6 logo" id="nav-logo">
+      </a>
+      <div></div>
+      <ul class="nav row" id="topnav">
+        <li>
+          <a href="https://dp6.com.br/">Site</a>
+        </li>
+        <li>
+          <a href="https://github.com/DP6">Github</a>
+        </li>
+        <li>
+          <a href="https://blog.dp6.com.br/">Blog</a>
+        </li>
+        <li class="dark-switch">
+          <span>
+            <em class="fa fa-sun-o icons"></em>
+            <label class="switch">
+              <input type="checkbox" name="" id="dark-switch" onclick="darkMode();" aria-label="dark mode">
+              <span class="slider round"></span>
+            </label>
+            <em class="fa fa-moon-o icons"></em>
+          </span>
+        </li>
+      </ul>
+    </div>
   </nav>
+
+
 </header>
