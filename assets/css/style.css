@@ -5,6 +5,8 @@
 
 @import 'card.css';
 @import 'switch.css';
+@import 'titles.css';
+@import 'components.css';
 
 html,
 body {

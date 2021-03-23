@@ -4,32 +4,40 @@
 
 layout: home
 ---
-
+<div class="title">
+  <span>“{/;INICIATIVAS/ }”</span>
+</div>
 <div class="cards-container">
-  {% for repository in site.github.public_repositories %}
-  {% if repository.homepage contains "dp6.github.io/"%}
+  {% for repository in site.github.public_repositories limit:6 %} {% if
+  repository.homepage contains "dp6.github.io/"%}
   <!-- {{site.url}}/{{repository.name}} -->
 
   <a href="https://dp6.github.io/{{repository.name}}">
-
-
     <div class="card column justify-around shadow body-bg">
       <div class="row">
         <figure>
           <img
             src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png"
-            alt="logo" class="logo" style="max-width: 130px;" />
+            alt="logo"
+            class="logo"
+            style="max-width: 130px"
+          />
         </figure>
       </div>
       <div class="row">
         <h3 class="card-title">{{repository.name}}</h3>
       </div>
       <div class="row">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social">
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social">
+        <img
+          alt="GitHub stars"
+          src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social"
+        />
+        <img
+          alt="GitHub forks"
+          src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social"
+        />
       </div>
       <div class="row">
-
         <p class="card-subtitle">{{repository.description }}</p>
       </div>
 
@@ -40,6 +48,5 @@ layout: home
       </div>
     </div>
   </a>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </div>
