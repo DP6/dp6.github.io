@@ -1,0 +1,46 @@
+:root {
+    --body-bg: #fafafa;
+    --primary: #fafafa;
+    --light: #63a4ff;
+    --dark: #004ba0;
+    --text-on-color: #fff;
+    --text-on-body: #000;
+    --shadow: #0000002d;
+    --card: #f9f9f9;
+}
+.dark-mode:root {
+    --body-bg: #121212;
+    --light: #fafafa;
+    --dark: #5d99c6;
+    --text-on-color: #000;
+    --text-on-body: #fff;
+    --dark-nav: #231f20;
+    --card: #292929;
+    --shadow: #cccccc0f;
+}
+
+/*colors*/
+.primary-color {
+    background-color: var(--primary);
+}
+
+.primary-color.light {
+    background-color: var(--light);
+}
+
+.primary-color.dark {
+    background-color: var(--dark);
+}
+
+.text-color {
+    color: var(--text-on-color);
+}
+
+.text-bg {
+    color: var(--text-on-body);
+}
+
+.dark-mode .navbar,
+.dark-mode .nav {
+    background-color: var(--dark-nav);
+}

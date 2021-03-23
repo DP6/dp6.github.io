@@ -1,0 +1,136 @@
+/* navbar */
+.navbar {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: 3.5rem;
+    z-index: 100;
+}
+
+nav a,
+nav span {
+    color: var(--text-on-body);
+    text-align: center;
+    padding: 0 0;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    font-weight: bold;
+}
+
+.logo,
+.nav {
+    margin: 0;
+    color: var(--text-on-color);
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    line-height: 3em;
+}
+
+.nav.row {
+    justify-content: flex-end;
+}
+/* nav links */
+.nav li {
+    margin-left: 40px;
+}
+
+.navbar .icon {
+    display: none;
+    font-size: 30px;
+}
+
+/* responsive */
+@media screen and (max-width: 752px) {
+    .container {
+        max-width: 80% !important;
+        padding: 20px 0 !important;
+        margin: 0 !important;
+    }
+
+    .nav.row {
+        flex-flow: column;
+        justify-content: start;
+        align-content: start;
+        align-items: flex-start !important;
+        width: 0;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .navbar a.icon,
+    .navbar span.icon {
+        display: initial;
+    }
+    .icon {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    /*hidden sidenav on mobile*/
+    .nav {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--primary);
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .nav a,
+    .nav span {
+        padding: 15px 8px 8px 32px;
+        font-size: 25px;
+        transition: 0.1s;
+        display: block;
+    }
+
+    .responsive {
+        width: 300px !important;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 15px;
+        left: -100px;
+        font-size: 30px !important;
+        z-index: 10000;
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    .closebtn.responsive {
+        left: 80px;
+    }
+
+    nav .container.row {
+        justify-content: space-between;
+    }
+}
+
+.active {
+    font-weight: 700;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+#closebtn em {
+    pointer-events: none;
+}
+
+.dark-mode nav a,
+.dark-mode nav span {
+    color: var(--text-on-body);
+}
+.dark-switch > span {
+    min-width: 160px;
+}

@@ -1,0 +1,76 @@
+footer {
+    font-weight: 100;
+    flex: 0 2em;
+    background-color: #231f20;
+    padding: 10em 5em 1em;
+}
+
+footer .row > :first-child,
+footer .row > :last-child {
+    min-width: 160px;
+}
+
+.centro-inovacao a {
+    font-size: 3em;
+}
+
+.copyright,
+.centro-inovacao,
+.politica a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5em;
+}
+
+.centro-inovacao {
+    font-size: 3em;
+}
+
+.social {
+    text-align: right;
+}
+
+footer .icon {
+    font-size: 1em !important;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 1.5em;
+    padding-top: 0.25em;
+    height: 1.5em;
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: black;
+}
+
+footer .icon:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+main * {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 752px) {
+    footer {
+        padding-top: 5em;
+    }
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    footer .row div {
+        display: flex;
+        justify-content: center;
+    }
+    footer .row .logo,
+    footer .row .centro-inovacao,
+    footer .row .social {
+        min-height: 50px;
+    }
+}
