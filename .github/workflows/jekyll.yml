@@ -2,9 +2,9 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches: main
   pull_request:
-    branches: [ main, master  ]
+    branches: main
   schedule:
     - cron: "0 0 * * *"
 
@@ -12,7 +12,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@2.0.5
+      env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'

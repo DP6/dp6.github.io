@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 10%;
+    padding: 0 2em;
 }
 
 .card {
@@ -28,6 +28,11 @@
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-logo {
+    width: 180px;
+    max-width: 180px;
 }
 
 /* Add some padding inside the card container */

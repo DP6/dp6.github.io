@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+.slideshow-dot {
+    text-align:center
+}
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -98,5 +102,11 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .slideshow-container, .slideshow-dot {
+        display: none;
     }
 }

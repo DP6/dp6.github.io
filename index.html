@@ -10,15 +10,14 @@ layout: home
 <div class="cards-container">
   {% for repository in site.github.public_repositories%} {% if
   repository.homepage contains "dp6.github.io/"%}
-  <!-- {{site.url}}/{{repository.name}} -->
 
   <a href="https://dp6.github.io/{{repository.name}}">
     <div class="card column justify-around shadow body-bg">
       <div class="row">
         <figure>
-          <img
+          <img 
             src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png"
-            alt="logo" class="logo" style="max-width: 130px" />
+            alt="logo" class="card-logo" />
         </figure>
       </div>
       <div class="row">

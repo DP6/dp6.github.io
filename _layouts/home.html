@@ -14,7 +14,7 @@
     {% else %}
     {% include carousel.html %}
     {% endif %}
-    <section class="content">
+    <section class={% if page.path != "index.html"%} "content initiative" {% endif %} "content">
       {{ content }}
     </section>
   </main>

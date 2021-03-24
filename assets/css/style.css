@@ -62,7 +62,6 @@ body {
 
 main {
     padding-top: 6rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-flow: column;
 }
