@@ -1,14 +1,14 @@
 .content {
-  padding-top: 2em;
+  padding: 2em;
   min-height: 200px;
 }
 
 .content .initiative {
-  padding:  2em 10em 0 10em;
+  padding:  2em 8em 0 8em;
 }
 
 @media screen and (max-width: 752px) {
   .content .initiative {
-    padding: 2em 0 0 0;
+    padding: 1em;
   }
 }
