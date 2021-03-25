@@ -89,5 +89,6 @@
     }
     .cards-container {
         justify-content: center;
+        padding: 0;
     }
 }

@@ -73,4 +73,13 @@ main * {
     footer .row .social {
         min-height: 50px;
     }
+    .centro-inovacao {
+        font-size: 2em;
+    }
+    .copyright {
+        font-size: 1em;
+    }
+    .politica a {
+        font-size: 1.2em;
+    }
 }
