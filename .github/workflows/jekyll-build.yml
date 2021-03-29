@@ -1,0 +1,23 @@
+name: Jekyll build github-pages
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Build and deploy
+      uses: helaili/jekyll-action@v2
+      with:
+        target_branch: 'gh-pages'
+        token: ${{ secrets.JEKYLL_TOKEN }}
+      
