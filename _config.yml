@@ -10,6 +10,7 @@ plugins:
     jekyll-github-metadata
 
 # Build settings
+repository: dp6/dp6.github.io
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
