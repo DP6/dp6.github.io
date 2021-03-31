@@ -9,10 +9,10 @@
   <!-- End Google Tag Manager (noscript) -->
   {% include header.html %}
   <main>
-    {% if page.path != "index.html" %}
-    {% include initiative-top.html %}
-    {% else %}
-    {% include carousel.html %}
+    {% if page.path == "index.html" %}
+      {% include carousel.html %}
+    {% elsif  page.path != "index.html" and page.path != "404.html" %}
+      {% include initiative-top.html %}
     {% endif %}
     <section class={% if page.path != "index.html"%} "content initiative" {% endif %} "content">
       {{ content }}
