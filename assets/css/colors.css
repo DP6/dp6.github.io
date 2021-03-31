@@ -1,8 +1,8 @@
 :root {
     --body-bg: #fafafa;
     --primary: #fafafa;
-    --light: #63a4ff;
-    --dark: #004ba0;
+    --light: #999;
+    --dark: #ddd;
     --text-on-color: #fff;
     --text-on-body: #000;
     --shadow: #0000002d;
@@ -10,8 +10,8 @@
 }
 .dark-mode:root {
     --body-bg: #121212;
-    --light: #fafafa;
-    --dark: #5d99c6;
+    --light: #4e4e4e;
+    --dark: #999;
     --text-on-color: #000;
     --text-on-body: #fff;
     --dark-nav: #231f20;

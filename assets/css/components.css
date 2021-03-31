@@ -2,9 +2,11 @@
   padding: 2em;
   min-height: 200px;
 }
-
 .content.initiative {
   padding:  2em 8em 0 8em;
+}
+.content.initiative>h1 {
+  display: none;
 }
 
 @media screen and (max-width: 752px) {
