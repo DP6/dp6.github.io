@@ -13,7 +13,7 @@ jobs:
     name: Update gh
     steps:
     - name: Dp6 action
-      uses: dp6/jekyll-update-pages-action@1
+      uses: dp6/jekyll-update-pages-action
       with:
         DEPLOY_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
         USER: ${{ secrets.GH_PAGES_USER }}
