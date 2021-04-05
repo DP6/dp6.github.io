@@ -1,18 +1,24 @@
 name: Update all github pages
 
 on:
+  push: 
+    branches: 
+    - deploy-gh-pages
   schedule:
     - cron: "30 0 * * *"
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
+    name: Update gh
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
-
-    - name: Install jq
-      run: apt-get update && apt-get install --no-install-recommends -y jq findutils curl ca-certificates
+    - name: Dp6 action
+      uses: actions/jekyll-update-pages-action@1
+      with:
+        DEPLOY_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
+        USER: ${{ secrets.GH_PAGES_USER }}
+        search-result:  's%3Apublic%20org%3Adp6'
+        
 
     - name: Update respositories public with gh-page
       run: sh build-github-pages-dp6.sh ${{ secrets.GH_PAGES_USER }} ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
