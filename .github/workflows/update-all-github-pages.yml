@@ -13,12 +13,9 @@ jobs:
     name: Update gh
     steps:
     - name: Dp6 action
-      uses: actions/jekyll-update-pages-action@1
+      uses: dp6/jekyll-update-pages-action@1
       with:
         DEPLOY_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
         USER: ${{ secrets.GH_PAGES_USER }}
-        search-result:  's%3Apublic%20org%3Adp6'
+        FILTER:  's%3Apublic%20org%3Adp6'
         
-
-    - name: Update respositories public with gh-page
-      run: sh build-github-pages-dp6.sh ${{ secrets.GH_PAGES_USER }} ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
