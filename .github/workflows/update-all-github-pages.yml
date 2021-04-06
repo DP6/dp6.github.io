@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Update gh
     steps:
-    - name: Dp6 action
-      uses: dp6/jekyll-update-pages-action@1.0.0
+    - name: Jekyll update github pages without new commit
+      uses: DP6/jekyll-update-pages-action@v1
       with:
         DEPLOY_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
         USER: ${{ secrets.GH_PAGES_USER }}
