@@ -1,0 +1,17 @@
+name: Update all github pages
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    name: Update Github Pages Initiatives
+    steps:
+    - name: Jekyll update github pages without new commit
+      uses: DP6/jekyll-update-pages-action@v1.0.1
+      with:
+        DEPLOY_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
+        USER: ${{ secrets.GH_PAGES_USER }}
+        FILTER:  'is%3Apublic%20org%3Adp6'
