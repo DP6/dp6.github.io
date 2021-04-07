@@ -9,8 +9,6 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-sitemap
-  - jekyll-assets
-  - jekyll-gzip
 
 defaults:
   -
