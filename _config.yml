@@ -7,11 +7,18 @@ url: "https://dp6.github.io" # the base hostname & protocol for your site, e.g. 
 
 plugins:
   - jekyll-feed
-    jekyll-github-metadata
+  - jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-gzip
+
+defaults:
+  -
+    scope:
+      path:            "case-dp6"
+    values:
+      sitemap:         false
 
 # Build settings
 repository: dp6/dp6.github.io
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
 

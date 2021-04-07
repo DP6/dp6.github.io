@@ -72,8 +72,8 @@
 
 @media screen and (max-width: 850px) {
   .initiative-header {
-    height: 20rem;
-    padding: 1em .5em 0 .5em;
+    height: 21.5rem;
+    padding: 2.5em 2em;
     flex-flow: column;
   }
   .initiative-logo {
@@ -87,5 +87,9 @@
   .initiative-options {
     width: 100%;
     padding: .5em 0 0 0;
+  }
+  .octocat-arm {
+    animation: b 0.65s infinite;
+    transform-origin: 13rem 10.6rem;
   }
 }
