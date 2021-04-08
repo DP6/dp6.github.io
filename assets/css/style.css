@@ -20,6 +20,7 @@ body {
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    font-display: swap;
 }
 
 .row {
@@ -84,6 +85,30 @@ main {
 
 .crop img {
     margin-top: -100px;
+}
+
+.not-found {
+    background-image: url("https://media0.giphy.com/media/3o7aCTPPm4OHfRLSH6/giphy.gif");
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-on-color);
+    min-height: 360px;
+    margin-bottom: 20px;
+}
+
+.not-found>h1, .not-found>h3{
+    opacity: .8;
+}
+
+.not-found>h1 {
+    font-size: 8em;
+}
+
+.not-found>h3 {
+    font-size: 2em;
 }
 
 main a {

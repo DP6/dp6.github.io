@@ -3,7 +3,7 @@
   try {
     showSlides(slideIndex);
   } catch (e) {
-    console.error(e);
+    console.warn(e);
   }
 
   // Next/previous controls
@@ -38,5 +38,5 @@
   document.getElementById("dp6-copyright").innerHTML = "&copy;DP6 " + new Date().getFullYear()
 </script>
 
-<script src="assets/js/main.js">
+<script src="assets/js/main.js" async>
 </script>

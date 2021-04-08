@@ -2,7 +2,7 @@ footer {
     font-weight: 100;
     flex: 0 2em;
     background-color: #231f20;
-    padding: 10em 5em 1em;
+    padding: 5em 5em 1em;
 }
 
 footer .row > :first-child,
