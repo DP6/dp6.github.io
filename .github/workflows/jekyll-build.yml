@@ -5,13 +5,12 @@ on:
     branches: main
   pull_request:
     branches: main
-  schedule:
-    - cron: "0 0 * * *"
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/setup-node@v2
     - name: Checkout repo
       uses: actions/checkout@v2
 
