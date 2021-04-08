@@ -18,7 +18,6 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
   gem 'sass-rails'
   gem 'coffee-rails'
-  gem 'uglifier'
 end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -28,10 +27,8 @@ end
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.15.1'
   gem 'jekyll-gzip', '~> 2.4', '>= 2.4.2'
-  gem 'jekyll-minifier', '~> 0.1.10'
   gem 'jekyll-sitemap', '~> 1.4'
   gem 'jekyll-github-metadata', '~> 2.13'
-
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

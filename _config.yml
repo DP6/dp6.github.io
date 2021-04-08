@@ -7,11 +7,15 @@ url: "https://dp6.github.io" # the base hostname & protocol for your site, e.g. 
 # Build settings
 repository: dp6/dp6.github.io
 
+gem: 
+  - therubyracer
+
 plugins:
   - jekyll-github-metadata
   - jekyll-sitemap
   - jekyll-minifier
   - jekyll-gzip
+  - jekyll-assets
 
 defaults:
   -
@@ -46,4 +50,21 @@ jekyll-minifier:
   uglifier_args:
 #    harmony: true                  
 
-
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: false
+  gzip: false
+  defaults:
+    integrity:
+      {css,img}: false
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
