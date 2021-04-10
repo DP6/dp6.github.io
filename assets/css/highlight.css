@@ -211,6 +211,7 @@ table {
   border-collapse: collapse;
   text-align: left;
   width: 100%;
+  overflow: auto;
 }
 table tr {
   background: var(--light);
@@ -242,9 +243,6 @@ table td span {
   }
   table tr {
     border-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 40px;
   }
   table td {
