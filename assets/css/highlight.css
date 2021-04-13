@@ -211,6 +211,7 @@ table {
   border-collapse: collapse;
   text-align: left;
   width: 100%;
+  display: block;
   overflow: auto;
 }
 table tr {
@@ -222,7 +223,7 @@ table td {
   padding: 10px 20px;
 }
 table td span {
-  background: var(--light);
+  background: var(--dark);
   color: var(--text-on-color);;
   display: none;
   font-size: 10px;
@@ -232,29 +233,6 @@ table td span {
   text-transform: uppercase;
   top: 0;
   left: 0;
-}
-
-/* Simple CSS for flexbox table on mobile */
-@media (max-width: 800px) {
-  table thead {
-    left: -9999px;
-    position: absolute;
-    visibility: hidden;
-  }
-  table tr {
-    border-bottom: 0;
-    margin-bottom: 40px;
-  }
-  table td {
-    border: 1px solid;
-    margin: 0 -1px -1px 0;
-    padding-top: 35px;
-    position: relative;
-    width: 50%;
-  }
-  table td span {
-    display: block;
-  }
 }
 
 /* Overflow auto */
