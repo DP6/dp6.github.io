@@ -1,44 +1,3 @@
-<style>
-
-  /*
-
-  <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-    </li>
-
-
-  .carousel__slide
-    background-image: url(https://cdn-images-1.medium.com/max/1024/1*s5vVw68CvupN3ejzLxbrNA.jpeg);
-    background-size: cover;
-    counter-increment: item;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    a
-
-
-
-    h3 
-    width: 70%;
-    line-height: initial;
-    text-align: center;
-
-    OR
-    width: 70%;
-    line-height: initial;
-    text-align: initial;
-  
-  */
-
-
-</style>
 <script async>
   function bindHtml(id, html) {
     document.getElementById(id).innerHTML = html;
@@ -70,7 +29,7 @@
       tabindex="${index}"
       class="carousel__slide" style="background-image: url(${post.thumbnail});">
         <div class="carousel__snapper">
-          <a href="${post.link}" target="_blank" class="carousel__slide__title">
+          <a href="${post.link}" rel="noopener" target="_blank" class="carousel__slide__title">
             <h3>${post.title}</h3>
           </a>
           <a href="#carousel__slide${qtdSlide -1}"
