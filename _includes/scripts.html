@@ -1,40 +1,75 @@
-<script>
-  var slideIndex = 1;
-  try {
-    showSlides(slideIndex);
-  } catch (e) {
-    console.warn(e);
+<script async>
+  function bindHtml(id, html) {
+    document.getElementById(id).innerHTML = html;
   }
 
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+  let xhr = new XMLHttpRequest();
+  let response = {};
 
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+  //TODO implementar consumo de banner customizados a partir do github seguindo a mesma estrutura do medium
+  xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dp6blog');
+  xhr.send();
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  xhr.onload = function() {
+    if (xhr.status == 200) { 
+      response = JSON.parse(xhr.response);
+      montarBanner();
+    } else { // show the result
+      console.info('Artigos não carregados')
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+  };
+
+  function generatePostId(post) {
+    return post.title.toLowerCase().replaceAll(/[^a-z0-9]/g, '-');
+  }
+
+  function montarBanner() {
+    let banners = '';
+    let buttons = '';
+    let qtdSlide = 5;
+    response.items.slice(0, qtdSlide).forEach((post, index) => {
+      let next = index +1;
+      let idPost = generatePostId(post);
+      banners += `
+      <li id="${idPost}"
+      tabindex="${index}"
+      class="carousel__slide" style="background-image: url(${post.thumbnail});">
+        <div class="carousel__snapper">
+          <a href="${post.link}" rel="noopener" target="_blank" class="carousel__slide__title">
+            <h3>${post.title}</h3>
+          </a>
+          <a href="#${generatePostId(response.items[qtdSlide -1])}"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#${next == qtdSlide ? generatePostId(response.items[0]) : generatePostId(response.items[next])}"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>`
+      
+      if (next < qtdSlide) {
+        buttons += `
+        <li class="carousel__navigation-item">
+          <a href="#${generatePostId(response.items[next])}"
+             class="carousel__navigation-button">Go to slide ${next}</a>
+        </li>
+        `
+      }
+    });
+   
+    bindHtml('dynamic-carousel', `
+    <ol class="carousel__viewport" id="dynamic-post">
+      ${banners}
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list" id="dynamic-button">
+        ${buttons}
+      </ol>
+    </aside>
+    `)
   }
 </script>
 
 <!-- dp6-copyright -->
-<script>
+<script async>
   document.getElementById("dp6-copyright").innerHTML = "&copy;DP6 " + new Date().getFullYear()
 </script>
 

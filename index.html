@@ -17,15 +17,15 @@ layout: default
         <figure>
           <img 
             src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png"
-            alt="logo" class="card-logo" />
+            alt="logo {{repository.name}}" class="card-logo" />
         </figure>
       </div>
       <div class="row">
         <h3 class="card-title">{{repository.name}}</h3>
       </div>
       <div class="row">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social" />
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social" />
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social&cacheSeconds=3000" />
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social&cacheSeconds=3000" />
       </div>
       <div class="row">
         <p class="card-subtitle">{{repository.description }}</p>
