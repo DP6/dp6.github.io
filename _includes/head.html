@@ -21,8 +21,12 @@
     content="dp6, Google Analytics, Sala de Performace, Marketing, Data Science, digital analytics, raft-suite, penguin-datalayer-collect, easy-collect, MAM" />
   <title>{{ site.title }} {% if site.initiative.size > 1 %} - {% endif %} {{ site.initiative }}</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icone.png">
-  <link rel="stylesheet" href="/assets/css/normalize.css" />
-  <link rel="stylesheet" href="/assets/css/style.css"/>
+  {% if jekyll.environment == "production" %}
+    <link rel="stylesheet" href="/src/bundle.css"/>
+  {% else %}
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+  {% endif %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400&lang=pt-br&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   {% if  page.path != "index.html" and page.path != "404.html" %}
