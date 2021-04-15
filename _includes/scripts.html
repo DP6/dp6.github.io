@@ -1,40 +1,110 @@
-<script>
-  var slideIndex = 1;
-  try {
-    showSlides(slideIndex);
-  } catch (e) {
-    console.warn(e);
+<style>
+
+  /*
+
+  <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+
+
+  .carousel__slide
+    background-image: url(https://cdn-images-1.medium.com/max/1024/1*s5vVw68CvupN3ejzLxbrNA.jpeg);
+    background-size: cover;
+    counter-increment: item;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    a
+
+
+
+    h3 
+    width: 70%;
+    line-height: initial;
+    text-align: center;
+
+    OR
+    width: 70%;
+    line-height: initial;
+    text-align: initial;
+  
+  */
+
+
+</style>
+<script async>
+  function bindHtml(id, html) {
+    document.getElementById(id).innerHTML = html;
   }
 
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+  let xhr = new XMLHttpRequest();
+  let response = {};
 
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+  xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dp6blog');
+  xhr.send();
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  xhr.onload = function() {
+    if (xhr.status == 200) { 
+      response = JSON.parse(xhr.response);
+      montarBanner();
+    } else { // show the result
+      console.info('Artigos não carregados')
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+  };
+
+  function montarBanner() {
+    let banners = '';
+    let buttons = '';
+    let qtdSlide = 5;
+    response.items.slice(0, qtdSlide).forEach((post, index) => {
+      let next = index +1;
+      banners += `
+      <li id="carousel__slide${index}"
+      tabindex="${index}"
+      class="carousel__slide" style="background-image: url(${post.thumbnail});">
+        <div class="carousel__snapper">
+          <a href="${post.link}" target="_blank" class="carousel__slide__title">
+            <h3>${post.title}</h3>
+          </a>
+          <a href="#carousel__slide${qtdSlide -1}"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide${next == qtdSlide ? 0 : next}"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>`
+      
+      if (next < qtdSlide) {
+        buttons += `
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide${next}"
+             class="carousel__navigation-button">Go to slide ${next}</a>
+        </li>
+        `
+      }
+    });
+   
+    bindHtml('dynamic-carousel', `
+    <ol class="carousel__viewport" id="dynamic-post">
+      ${banners}
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list" id="dynamic-button">
+        ${buttons}
+      </ol>
+    </aside>
+    `)
   }
 </script>
 
 <!-- dp6-copyright -->
-<script>
+<script async>
   document.getElementById("dp6-copyright").innerHTML = "&copy;DP6 " + new Date().getFullYear()
 </script>
 
