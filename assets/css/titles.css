@@ -4,3 +4,9 @@
   margin: 0 0 2em 0;
   font-weight: initial;
 }
+
+@media screen and (max-width: 752px) {
+  .title {
+    margin: 0 0 1em 0;
+  }
+}
