@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         $('#dark-switch').checked = darkmode;
     }
 
-    touchHandler('.slideshow-container', 'direction', plusSlides)
     touchHandler('.nav', 'direction', function (dir) { if (dir > 0) responsive() });
     touchHandler('body', 'position', function (start, direction) {
         if (start <= 30 && direction == -1) responsive()
