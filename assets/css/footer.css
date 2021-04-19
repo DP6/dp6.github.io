@@ -25,6 +25,10 @@ footer .row > :last-child {
     font-size: 3em;
 }
 
+.politica a {
+    text-decoration: none;
+}
+
 .social {
     text-align: right;
 }
