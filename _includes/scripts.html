@@ -1,77 +1,79 @@
-<script async>
-  function bindHtml(id, html) {
-    document.getElementById(id).innerHTML = html;
-  }
-
-  let xhr = new XMLHttpRequest();
-  let response = {};
-
-  //TODO implementar consumo de banner customizados a partir do github seguindo a mesma estrutura do medium
-  xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dp6blog');
-  xhr.send();
-
-  xhr.onload = function() {
-    if (xhr.status == 200) { 
-      response = JSON.parse(xhr.response);
-      montarBanner();
-    } else { // show the result
-      console.info('Artigos não carregados')
+{% if page.path == "index.html" %}
+  <script async>
+    function bindHtml(id, html) {
+      document.getElementById(id).innerHTML = html;
     }
-  };
 
-  function generatePostId(post) {
-    return post.title.toLowerCase().replaceAll(/[^a-z0-9]/g, '-');
-  }
+    let xhr = new XMLHttpRequest();
+    let response = {};
 
-  function montarBanner() {
-    let banners = '';
-    let buttons = '';
-    let qtdSlide = 5;
-    response.items.slice(0, qtdSlide).forEach((post, index) => {
-      let next = index +1;
-      let idPost = generatePostId(post);
-      banners += `
-      <li id="${idPost}"
-      tabindex="${index}"
-      class="carousel__slide" style="background-image: url(${post.thumbnail});">
-        <div class="carousel__snapper">
-          <a href="${post.link}" rel="noopener" target="_blank" class="carousel__slide__title">
-            <h3>${post.title}</h3>
-          </a>
-          <a href="#${generatePostId(response.items[qtdSlide -1])}"
-            class="carousel__prev">Go to last slide</a>
-          <a href="#${next == qtdSlide ? generatePostId(response.items[0]) : generatePostId(response.items[next])}"
-            class="carousel__next">Go to next slide</a>
-        </div>
-      </li>`
-      
-      if (next < qtdSlide) {
-        buttons += `
-        <li class="carousel__navigation-item">
-          <a href="#${generatePostId(response.items[next])}"
-             class="carousel__navigation-button">Go to slide ${next}</a>
-        </li>
-        `
+    //TODO implementar consumo de banner customizados a partir do github seguindo a mesma estrutura do medium
+    xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dp6blog');
+    xhr.send();
+
+    xhr.onload = function() {
+      if (xhr.status == 200) { 
+        response = JSON.parse(xhr.response);
+        montarBanner();
+      } else { // show the result
+        console.info('Artigos não carregados')
       }
-    });
-   
-    bindHtml('dynamic-carousel', `
-    <ol class="carousel__viewport" id="dynamic-post">
-      ${banners}
-    </ol>
-    <aside class="carousel__navigation">
-      <ol class="carousel__navigation-list" id="dynamic-button">
-        ${buttons}
+    };
+
+    function generatePostId(post) {
+      return post.title.toLowerCase().replaceAll(/[^a-z0-9]/g, '-');
+    }
+
+    function montarBanner() {
+      let banners = '';
+      let buttons = '';
+      let qtdSlide = 5;
+      response.items.slice(0, qtdSlide).forEach((post, index) => {
+        let next = index +1;
+        let idPost = generatePostId(post);
+        banners += `
+        <li id="${idPost}"
+        tabindex="${index}"
+        class="carousel__slide" style="background-image: url(${post.thumbnail});">
+          <div class="carousel__snapper">
+            <a href="${post.link}" rel="noopener" target="_blank" class="carousel__slide__title">
+              <h3>${post.title}</h3>
+            </a>
+            <a href="#${generatePostId(response.items[qtdSlide -1])}"
+              class="carousel__prev">Go to last slide</a>
+            <a href="#${next == qtdSlide ? generatePostId(response.items[0]) : generatePostId(response.items[next])}"
+              class="carousel__next">Go to next slide</a>
+          </div>
+        </li>`
+        
+        if (next < qtdSlide) {
+          buttons += `
+          <li class="carousel__navigation-item">
+            <a href="#${generatePostId(response.items[next])}"
+              class="carousel__navigation-button">Go to slide ${next}</a>
+          </li>
+          `
+        }
+      });
+    
+      bindHtml('dynamic-carousel', `
+      <ol class="carousel__viewport" id="dynamic-post">
+        ${banners}
       </ol>
-    </aside>
-    `)
-  }
-</script>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list" id="dynamic-button">
+          ${buttons}
+        </ol>
+      </aside>
+      `)
+    }
+  </script>
+{% endif %}
 
 <!-- dp6-copyright -->
 <script async>
   document.getElementById("dp6-copyright").innerHTML = "&copy;DP6 " + new Date().getFullYear()
 </script>
 
-<script src="assets/js/main.js" async>
+<script src="assets/js/main.js" defer>
 </script>
