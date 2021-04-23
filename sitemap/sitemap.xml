@@ -2,258 +2,54 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://dp6.github.io</loc>
-    <lastmod>2021-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/innovation.jpg</image:loc>
-      <image:title>Foto de uma lousa com uma lâmpada simbolizando ideias. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/attribution.jpg</image:loc>
-      <image:title>Foto de um computador com alguns gráficos. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/data-quality.jpg</image:loc>
-      <image:title>Foto de um estetoscópio. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/easy-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/jekyll-update-pages-action.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/Marketing-Attribution-Models.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-core.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-document-formatter.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/roger-watcher.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dp6.github.io/penguin-datalayer-core/</loc>
-    <lastmod>2021-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-core.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dp6.github.io/penguin-document-formatter/</loc>
-    <lastmod>2021-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-document-formatter.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dp6.github.io/roger-watcher/</loc>
-    <lastmod>2021-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/roger-watcher.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://dp6.github.io/Marketing-Attribution-Models/</loc>
-    <lastmod>2021-04-07</lastmod>
+    <lastmod>2021-04-23</lastmod>
     <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/Marketing-Attribution-Models.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/Marketing-Attribution-Models/readme-images/output_37_1.png</image:loc>
-      <image:title>png</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/Marketing-Attribution-Models/readme-images/output_39_1.png</image:loc>
-      <image:title>png</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/Marketing-Attribution-Models/readme-images/output_45_1.png</image:loc>
-      <image:title>png</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/Marketing-Attribution-Models/readme-images/output_47_1.png</image:loc>
-      <image:title>png</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://dp6.github.io/marketing-data-sync/</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://dp6.github.io/jekyll-update-pages-action/</loc>
-    <lastmod>2021-04-07</lastmod>
+    <lastmod>2021-04-23</lastmod>
     <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/jekyll-update-pages-action.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/raw/main/public/images/dp6-gh-pages-architecture.png</image:loc>
-      <image:title>Architecture dp6.github.io</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://dp6.github.io/roger-watcher/</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://dp6.github.io/penguin-datalayer-collect/</loc>
-    <lastmod>2021-04-07</lastmod>
+    <lastmod>2021-04-23</lastmod>
     <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/images/datalayer-collect-abrangencia-ecossistema-raft-suite.jpg</image:loc>
-      <image:title>DP6</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/raw/main/public/images/dashboar-penguin-datalayer-collect.gif</image:loc>
-      <image:title>CI - Public - penguin datalayer collect</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://dp6.github.io/penguin-datalayer-core/</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://dp6.github.io/penguin-datalayer/</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://dp6.github.io</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://dp6.github.io/penguin-document-formatter/</loc>
+    <lastmod>2021-04-23</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://dp6.github.io/easy-collect/</loc>
-    <lastmod>2021-04-07</lastmod>
+    <lastmod>2021-04-23</lastmod>
     <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/easy-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dp6.github.io/?utm_medium=README&amp;amp;utm_source=github&amp;amp;utm_campaign=gitacion</loc>
-    <lastmod>2021-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-cor.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/innovation.jpg</image:loc>
-      <image:title>Foto de uma lousa com uma lâmpada simbolizando ideias. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/attribution.jpg</image:loc>
-      <image:title>Foto de um computador com alguns gráficos. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/data-quality.jpg</image:loc>
-      <image:title>Foto de um estetoscópio. Retirada do pexels.com</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/easy-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/jekyll-update-pages-action.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/Marketing-Attribution-Models.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-collect.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-datalayer-core.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/penguin-document-formatter.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/roger-watcher.png</image:loc>
-      <image:title>logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dp6.github.io/assets/img/logo-branco.png</image:loc>
-      <image:title>DP6 logo</image:title>
-    </image:image>
   </url>
 </urlset>
-<!--<guid value="66119eb4-f664-49ab-b310-833232c96919" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
