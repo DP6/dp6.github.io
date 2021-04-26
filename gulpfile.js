@@ -10,8 +10,8 @@ function clean() {
 
 function concat() {
   return gulp.src('assets/css/*.css')
-    .pipe(concatCss("bundle.css"))
     .pipe(replace(/@import.+\.css";$/g, ''))
+    .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('src/'));
 }
 
