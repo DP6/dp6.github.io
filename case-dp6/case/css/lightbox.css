@@ -1,0 +1,140 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: white;
+  transition: transform 1s;
+  transform: translateX(100%);
+}
+
+.lightbox-open .lightbox {
+  transform: translateX(0%) ;
+}
+
+.lightbox * {
+  transition-timing-function: ease-in-out;
+}
+
+.lightbox-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: height .4s, box-shadow .4s;
+  position: relative;
+  text-align: center;
+}
+
+.scrolled .lightbox-header {
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.lightbox-icon {
+  position: relative;
+  top: 0;
+  height: 100px;
+  width: 100px;
+  transition: left .4s, padding .4s, transform .4s;
+  left: calc(50% - 50px);
+  padding: 10px;
+  transform: scale(1);
+}
+
+.scrolled .lightbox-icon {
+  left: 0;
+  padding: 10px;
+  transform: scale(.6) translate(-30px, -30px);
+}
+
+.lightbox-title {
+  transition: opacity .4s, transform .4s;
+  font-size: 1.5em;
+  line-height: 60px;
+  align-self: flex-start;
+  opacity: 0;
+  transform: translateX(100px) scale(0);
+}
+
+.scrolled .lightbox-title {
+  opacity: 1;
+  transform: translateX(-25px);
+  transition-delay: .2s;
+}
+
+.lightbox-fechar {
+  padding: 20px;
+  transition: background-color .25s;
+  cursor: pointer;
+}
+
+.lightbox-fechar:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.lightbox-content {
+  transition: all .2s;
+  padding: 10px 20px;
+  max-height: calc(100% - 80px);
+  overflow-y: auto;
+}
+
+.lightbox-content .secao-imagem {
+  float: none;
+  width: 100%;
+}
+
+.scrolled .lightbox-content {
+  max-height: calc(100% - 60px);
+}
+
+@media only screen and (min-width: 1000px) {
+  .lightbox-icon {
+    transition: left .6s, padding .6s, transform .6s;
+  }
+  
+  .lightbox-header {
+    transition: height .4s, box-shadow .4s;
+  }
+
+  .lightbox-backdrop {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity .5s, transform 0s .5s;
+    transform: scale(0);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: black;
+    opacity: 0;
+  }
+  
+  .lightbox-open .lightbox-backdrop {
+    transition: opacity .5s, transform 0s 0s;
+    transform: scale(1);
+    opacity: .2;
+  }
+  
+  .lightbox {
+    width: 700px;
+    height: 70%;
+    top: 15%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    transform: translateX(50%) scale(0);
+    transition: transform 1s, opacity .5s;
+    opacity: 0;
+  }
+  
+  .lightbox-open .lightbox {
+    transform: translateX(50%) scale(1);
+    opacity: 1;
+  } 
+  
+  .lightbox-content {
+    line-height: 2em;
+  }
+}

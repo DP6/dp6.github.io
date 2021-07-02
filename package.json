@@ -1,0 +1,28 @@
+{
+  "name": "dp6.github.io",
+  "version": "1.0.0",
+  "description": "DP6 Open Initiatives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DP6/dp6.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DP6/dp6.github.io/issues"
+  },
+  "homepage": "https://github.com/DP6/dp6.github.io#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-replace": "^1.0.0"
+  }
+}
