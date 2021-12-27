@@ -66,6 +66,6 @@ function darkMode() {
     toggleClass(document.documentElement, 'dark-mode');
     darkmodestate = !darkmodestate;
     window.localStorage.setItem('dark-mode', darkmodestate);
-    var logo = darkmodestate ? 'logo-branco' : 'logo-cor';
-    $('#nav-logo').src = "/assets/img/" + logo + ".png";
+    /*var logo = darkmodestate ? 'logo-branco' : 'logo-cor';
+    $('#nav-logo').src = "/assets/img/" + logo + ".png";*/
 }

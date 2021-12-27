@@ -11,7 +11,7 @@
 
 nav a,
 nav span {
-    color: var(--text-on-body);
+    color: var(--text-on-dark);
     text-align: center;
     padding: 0 0;
     text-decoration: none;

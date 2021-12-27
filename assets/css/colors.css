@@ -1,21 +1,23 @@
 :root {
     --body-bg: #fafafa;
-    --primary: #fafafa;
-    --light: #999;
-    --dark: #ddd;
-    --text-on-color: #fff;
+    --primary: #007a94;
+    --light: #00c0d9;
+    --dark: #004054;
+    --text-on-color: #000;
     --text-on-body: #000;
-    --shadow: #0000002d;
-    --card: #f9f9f9;
+    --text-on-dark: #fff;
+    --shadow: #3c3f482d;
+    --card: #fff4e8;
+    --nav: #231f20;
 }
 .dark-mode:root {
-    --body-bg: #121212;
-    --light: #4e4e4e;
-    --dark: #999;
+    --body-bg: #091923;
+    --light: #007a94;
+    --dark: #004054;
     --text-on-color: #000;
     --text-on-body: #fff;
-    --dark-nav: #231f20;
-    --card: #292929;
+    --dark-nav: #3c3f48;
+    --card: #5b626c;
     --shadow: #cccccc0f;
 }
 
@@ -41,6 +43,17 @@
 }
 
 .dark-mode .navbar,
-.dark-mode .nav {
+.dark-mode .nav,
+.dark-mode footer {
     background-color: var(--dark-nav);
+}
+
+.navbar,
+.nav {
+    background-color: var(--nav);
+}
+
+.text-dark,
+.text-dark * {
+    color: var(--text-on-dark);
 }
