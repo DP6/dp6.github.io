@@ -28,6 +28,7 @@
     let banners = '';
     let buttons = '';
     let qtdSlide = 5;
+    console.log(response);
     response.items.slice(0, qtdSlide).forEach((post, index) => {
       let next = index + 1;
       let idPost = generatePostId(post);

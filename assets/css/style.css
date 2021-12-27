@@ -110,3 +110,27 @@ main a {
     text-align: center;
     text-decoration: none;
 }
+
+.posts > *:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+.posts {
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    height: 350px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.post a {
+    text-align: end;
+    text-decoration: underline;
+    color: var(--light);
+}

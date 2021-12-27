@@ -34,6 +34,10 @@
     background-color: var(--dark);
 }
 
+.primary-text.light {
+    color: var(--light);
+}
+
 .text-color {
     color: var(--text-on-color);
 }
