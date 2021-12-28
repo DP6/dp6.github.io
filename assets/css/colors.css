@@ -12,7 +12,7 @@
 }
 .dark-mode:root {
     --body-bg: #091923;
-    --light: #007a94;
+    --light: #00c0d9;
     --dark: #004054;
     --text-on-color: #000;
     --text-on-body: #fff;
@@ -67,4 +67,8 @@
 .text-dark,
 .text-dark * {
     color: var(--text-on-dark);
+}
+
+.dark-mode .card .primary-text {
+    color: var(--light);
 }
