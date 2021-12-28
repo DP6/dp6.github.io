@@ -25,16 +25,12 @@ footer .row > :last-child {
     font-size: 3em;
 }
 
-.politica a {
-    text-decoration: none;
-}
-
 .social {
     text-align: right;
 }
 
 footer .icon {
-    font-size: 1em !important;
+    font-size: 1.2em !important;
     text-align: center;
     background-color: var(--text-on-dark);
     padding: 0.4em;

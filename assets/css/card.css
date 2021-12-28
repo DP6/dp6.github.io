@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 2em;
+    max-width: 1800px;
 }
 
 .card {
@@ -10,28 +11,29 @@
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     border-radius: 5px;
-    min-height: 350px;
-    width: 350px;
+    height: 220px;
+    width: 460px;
     text-align: center;
     text-overflow: ellipsis;
     overflow: hidden;
     position: relative;
-    margin: 0 1em 3em;
+    margin: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--card);
     z-index: 2;
-    padding: 10px 50px !important;
+    padding: 25px !important;
+    border-color: var(--light);
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--light);
 }
 
 .card-logo {
-    width: 180px;
+    width: 120px;
     max-width: 180px;
 }
 

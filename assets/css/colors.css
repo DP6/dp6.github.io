@@ -7,7 +7,7 @@
     --text-on-body: #000;
     --text-on-dark: #fff;
     --shadow: #3c3f482d;
-    --card: #fff4e8;
+    --card: #fff;
     --nav: #231f20;
 }
 .dark-mode:root {
@@ -34,8 +34,15 @@
     background-color: var(--dark);
 }
 
+.primary-text {
+    color: var(--primary);
+}
+
 .primary-text.light {
     color: var(--light);
+}
+.primary-text.dark {
+    color: var(--dark);
 }
 
 .text-color {

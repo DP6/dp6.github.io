@@ -1,0 +1,75 @@
+<section class="column">
+  <h1>Últimos posts no nosso <span class="primary-text light">Blog</span></h1>
+  <section class="row posts" id="blog-posts">
+    <div class="post">
+      <!--<img src="https://cdn-images-1.medium.com/max/1024/1*K7PMRKJj1eE7W6dksfvk2w.png" alt="" width="250px"><!---->
+      <h3>TOP 5 posts mais lidos do Blog DP6 em 2021</h3>
+      <p>Abaixo selecionamos os 5 posts mais lidos do ano pra você ler, reler e compartilhar!</p>
+      <a
+        href="https://blog.dp6.com.br/top-5-posts-mais-lidos-do-blog-dp6-em-2021-b808823e489b?source=rss-3794c7b4a281------2">Leia
+        mais</a>
+    </div>
+  </section>
+</section>
+
+<script async>
+  function bindHtml(id, html) {
+    document.getElementById(id).innerHTML = html;
+  }
+
+  function getPosts() {
+
+    let xhr = new XMLHttpRequest();
+    let response = {};
+
+    //TODO implementar consumo de banner customizados a partir do github seguindo a mesma estrutura do medium
+    xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dp6blog');
+    xhr.send();
+
+    xhr.onload = function () {
+      if (xhr.status == 200) {
+        response = JSON.parse(xhr.response);
+        parsePosts(response);
+      } else { // show the result
+        console.info('Artigos não carregados')
+      }
+    };
+  }
+
+  function parsePosts(response) {
+    let { items } = response;
+    items = filterPosts(items);
+
+    items = items.map(function ({ title, thumbnail, link, description, categories }) {
+      description = description.match(/<p>(.*)<\/p>/)[1];
+      description = description.length > 150 ? description.slice(0, 150) + '...' : description;
+      return { title, thumbnail, link, description, categories };
+    }).map(htmlPost);
+
+    console.log(items);
+    bindHtml('blog-posts', items.join(""));
+
+  }
+
+  function htmlPost({ title, thumbnail, link, description, categories }) {
+    return `<div class="post">
+      <h3>${title}</h3>
+      <p>${description}</p>
+      <a
+        href="${link}">Leia
+        mais</a>
+    </div>`
+  }
+
+  function filterPosts(items, lang = "pt", max = 4) {
+    let blog = {
+      pt: "blog.dp6.com.br",
+      en: "medium.com"
+    }
+    items = items.filter(({ link }) => link.includes(blog[lang])).slice(0, max);
+    return items;
+  }
+
+  getPosts();
+
+</script>

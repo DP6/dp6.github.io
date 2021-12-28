@@ -124,7 +124,7 @@ main a {
     display: flex;
     flex-direction: column;
     padding: 10px 25px;
-    height: 350px;
+    height: 265px;
     justify-content: space-between;
     margin: 10px;
 }
