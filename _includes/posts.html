@@ -38,6 +38,7 @@
 
   function parsePosts(response) {
     let { items } = response;
+    console.log(items);
     items = filterPosts(items);
 
     items = items.map(function ({ title, thumbnail, link, description, categories }) {
@@ -66,7 +67,9 @@
       pt: "blog.dp6.com.br",
       en: "medium.com"
     }
-    items = items.filter(({ link }) => link.includes(blog[lang])).slice(0, max);
+    items = items
+    //.filter(({ link }) => link.includes(blog[lang]))
+    .slice(0, max);
     return items;
   }
 
