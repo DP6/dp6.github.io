@@ -1,0 +1,136 @@
+@import 'normalize.css';
+@import 'highlight.css';
+@import 'colors.css';
+@import 'navbar.css';
+@import 'footer.css';
+@import 'carousel.css';
+
+@import 'card.css';
+@import 'switch.css';
+@import 'titles.css';
+@import 'components.css';
+@import 'initiative.css';
+
+html,
+body {
+    font-family: 'Ubuntu', 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica',
+        'Arial', sans-serif;
+    font-size: 14px;
+    color: var(--text-on-body);
+    line-height: 1.5em;
+    background-color: var(--body-bg);
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-display: swap;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.align-around {
+    align-content: space-around;
+}
+
+.align-between {
+    align-content: space-between;
+}
+
+main {
+    padding-top: 6rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 20px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.not-found {
+    background-image: url('https://media0.giphy.com/media/3o7aCTPPm4OHfRLSH6/giphy.gif');
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-on-color);
+    min-height: 360px;
+    margin-bottom: 20px;
+}
+
+.not-found > h1,
+.not-found > h3 {
+    opacity: 0.8;
+}
+
+.not-found > h1 {
+    font-size: 8em;
+}
+
+.not-found > h3 {
+    font-size: 2em;
+}
+
+main a {
+    color: var(--text-on-body);
+    text-align: center;
+    text-decoration: none;
+}
+
+.posts > *:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+.posts {
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    height: 265px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.post a {
+    text-align: end;
+    text-decoration: underline;
+    color: var(--light);
+}
