@@ -112,7 +112,7 @@ main a {
 }
 
 .posts > *:not(:last-child) {
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--text-on-body);
 }
 
 .posts {
@@ -132,5 +132,10 @@ main a {
 .post a {
     text-align: end;
     text-decoration: underline;
+    color: var(--primary);
+}
+
+.dark-mode .post a,
+.dark-mode h1 .primary-text {
     color: var(--light);
 }

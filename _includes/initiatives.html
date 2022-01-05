@@ -1,5 +1,5 @@
 <div class="column">
-  <h1>Conheça nossas <span class="primary-text light">iniciativas</span></h1>
+  <h1>Conheça nossas <span class="primary-text">iniciativas</span></h1>
   <section class="cards-container">
 
 
@@ -25,14 +25,14 @@
 
         </div>
         <div>
-          <h3 class="card-title">
+          <h2 class="card-title">
             {% assign title = repository.name | replace: '-', ' ' | split: ' ' %}
             {% capture titlecase %}
             {% for word in title %}
             {{ word | capitalize }}
             {% endfor %}{% endcapture %}
             {{ titlecase }}
-          </h3>
+          </h2>
           <p class="card-subtitle">{{repository.description }}</p>
         </div>
         <div class="actions">

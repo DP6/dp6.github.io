@@ -45,7 +45,7 @@
 .card-title {
     font-size: 1.3em;
     line-height: 2em;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -81,7 +81,13 @@
 .actions {
     position: absolute;
     bottom: 0.5em;
-    right: 0.5em;
+    right: 1.5em;
+}
+
+.dark-mode .actions .primary-text {
+    color: var(--text-on-body);
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 752px) {
