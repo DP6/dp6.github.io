@@ -2,21 +2,20 @@ name: Jekyll build github-pages
 
 on:
   push:
-    branches: main
+    branches: [main]
   pull_request:
-    branches: main
+    branches: [main]
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v2
-    - name: Checkout repo
-      uses: actions/checkout@v2
-
-    - name: Build and deploy
-      uses: helaili/jekyll-action@v2
-      with:
-        target_branch: 'gh-pages'
-        token: ${{ secrets.JEKYLL_TOKEN }}
-      
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Build minified css
+        run: npm install && npm run build
+      - name: Build and deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          target_branch: "gh-pages"
+          token: ${{ secrets.JEKYLL_TOKEN }}

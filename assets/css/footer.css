@@ -1,13 +1,13 @@
 footer {
     font-weight: 100;
     flex: 0 2em;
-    background-color: #231f20;
+    background-color: var(--nav);
     padding: 5em 5em 1em;
 }
 
 footer .row > :first-child,
 footer .row > :last-child {
-    min-width: 160px;
+    min-width: 180px;
 }
 
 .centro-inovacao a {
@@ -17,7 +17,7 @@ footer .row > :last-child {
 .copyright,
 .centro-inovacao,
 .politica a {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--text-on-dark);
     font-size: 1.5em;
 }
 
@@ -25,18 +25,14 @@ footer .row > :last-child {
     font-size: 3em;
 }
 
-.politica a {
-    text-decoration: none;
-}
-
 .social {
     text-align: right;
 }
 
 footer .icon {
-    font-size: 1em !important;
+    font-size: 1.2em !important;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: var(--text-on-dark);
     padding: 0.4em;
     border-radius: 50%;
     transition: all 0.5s;

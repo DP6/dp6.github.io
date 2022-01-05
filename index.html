@@ -1,42 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+title: DP6 - You imagine, our data science makes it possible
 layout: default
 ---
-<div class="row center">
-  <h1 class="title">{/;INICIATIVAS/}</h1>
-</div>
-<div class="cards-container">
-  {% for repository in site.github.public_repositories%} {% if
-  repository.homepage contains "dp6.github.io/"%}
 
-  <a href="https://dp6.github.io/{{repository.name}}">
-    <div class="card column justify-around shadow body-bg">
-      <div class="row">
-        <figure>
-          <img 
-            src="https://raw.githubusercontent.com/DP6/templates-centro-de-inovacoes/main/public/logos-iniciativas/{{repository.name}}.png"
-            alt="logo {{repository.name}}" class="card-logo" />
-        </figure>
-      </div>
-      <div class="row">
-        <h3 class="card-title">{{repository.name}}</h3>
-      </div>
-      <div class="row">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/DP6/{{repository.name}}?style=social&cacheSeconds=3000" />
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/DP6/{{repository.name}}?style=social&cacheSeconds=3000" />
-      </div>
-      <div class="row">
-        <p class="card-subtitle">{{repository.description }}</p>
-      </div>
+{% include posts.html %}
 
-      <div class="actions">
-        <div class="action-buttons">
-          <em class="fa fa-arrow-right"></em>
-        </div>
-      </div>
-    </div>
-  </a>
-  {% endif %} {% endfor %}
-</div>
+{% include initiatives.html %}
