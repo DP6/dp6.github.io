@@ -1,0 +1,74 @@
+:root {
+    --body-bg: #fafafa;
+    --primary: #007a94;
+    --light: #00c0d9;
+    --dark: #004054;
+    --text-on-color: #000;
+    --text-on-body: #000;
+    --text-on-dark: #fff;
+    --shadow: #3c3f482d;
+    --card: #fff;
+    --nav: #231f20;
+}
+.dark-mode:root {
+    --body-bg: #091923;
+    --light: #00c0d9;
+    --dark: #004054;
+    --text-on-color: #000;
+    --text-on-body: #fff;
+    --dark-nav: #3c3f48;
+    --card: #5b626c;
+    --shadow: #cccccc0f;
+}
+
+/*colors*/
+.primary-color {
+    background-color: var(--primary);
+}
+
+.primary-color.light {
+    background-color: var(--light);
+}
+
+.primary-color.dark {
+    background-color: var(--dark);
+}
+
+.primary-text {
+    color: var(--primary);
+}
+
+.primary-text.light {
+    color: var(--light);
+}
+.primary-text.dark {
+    color: var(--dark);
+}
+
+.text-color {
+    color: var(--text-on-color);
+}
+
+.text-bg {
+    color: var(--text-on-body);
+}
+
+.dark-mode .navbar,
+.dark-mode .nav,
+.dark-mode footer {
+    background-color: var(--dark-nav);
+}
+
+.navbar,
+.nav {
+    background-color: var(--nav);
+}
+
+.text-dark,
+.text-dark * {
+    color: var(--text-on-dark);
+}
+
+.dark-mode .card .primary-text {
+    color: var(--light);
+}

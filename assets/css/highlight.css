@@ -1,0 +1,157 @@
+.highlight {
+    padding: 2px 10px;
+    margin: 10px;
+}
+.highlight,
+.highlight code {
+    background-color: #252525;
+    color: #b3b9c5;
+    border-radius: 5px;
+}
+
+.highlight .nc,
+.highlight .nc::selection,
+.highlight .nt,
+.highlight .nt::selection,
+.highlight .nl,
+.highlight .nl::selection {
+    color: #569cd6;
+}
+.highlight .na,
+.highlight .na::selection {
+    color: #9cdcfe;
+}
+
+.highlight .s,
+.highlight .s::selection,
+.highlight .sb,
+.highlight .sb::selection,
+.highlight .sc,
+.highlight .sc::selection,
+.highlight .s1,
+.highlight .s1::selection,
+.highlight .s2,
+.highlight .s2::selection {
+    color: #ce9178;
+}
+.highlight .p,
+.highlight .p::selection {
+    color: #d4d4d4;
+}
+
+.highlight .k,
+.highlight .k::selection,
+.highlight .kd,
+.highlight .kd::selection,
+.highlight .kn,
+.highlight .kn::selection,
+.highlight .kr,
+.highlight .kr::selection,
+.highlight .kt,
+.highlight .kt::selection {
+    color: #569cd6;
+}
+.highlight .nf,
+.highlight .nx {
+    color: #d4d4d4;
+}
+
+.highlight .nf::selection,
+.highlight .nx::selection,
+.highlight .o::selection,
+.highlight .p::selection {
+    color: #3d3d3d;
+}
+
+.highlight .o {
+    color: #d4d4d4;
+}
+.highlight .c,
+.highlight .c::selection,
+.highlight .cm,
+.highlight .cm::selection,
+.highlight .cp,
+.highlight .cp::selection,
+.highlight .c1,
+.highlight .c1::selection,
+.highlight .cs,
+.highlight .cs::selection {
+    color: #6a9955;
+}
+.highlight .kp,
+.highlight .kp::selection,
+.highlight .nb,
+.highlight .nb::selection {
+    color: #9cdcfe;
+}
+
+.highlight .kc,
+.highlight .kc::selection {
+    color: #569cd6;
+}
+
+.btn-code {
+    position: absolute !important;
+    right: 2%;
+}
+
+pre.highlight {
+    max-width: 93%;
+}
+
+::selection {
+    background-color: #ccc;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    display: block;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    margin: 1em;
+    width: fit-content;
+    background: var(--card);
+}
+table tr {
+    background: var(--card);
+    border-bottom: 1px solid;
+    width: 100%;
+}
+table th,
+table td {
+    padding: 10px 20px;
+}
+table td span {
+    background: var(--dark);
+    color: var(--text-on-color);
+    display: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+}
+table tr:hover {
+    border: 2px solid var(--light);
+}
+table thead {
+    color: var(--primary);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.dark-mode table thead {
+    color: var(--light);
+}
+
+/* Overflow auto */
+er-rouge,
+p {
+    overflow: auto;
+}
